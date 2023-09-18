@@ -1,0 +1,19 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Sombra -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#20000000" />
+            <corners android:topLeftRadius="100dp" android:topRightRadius="100dp" />
+        </shape>
+    </item>
+    <!-- Degradado para el fondo -->
+    <item android:top="2dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#FFFFFF"
+                android:endColor="#F0F0F0"
+                android:type="linear" />
+            <corners android:topLeftRadius="30dp" android:topRightRadius="30dp" />
+        </shape>
+    </item>
+</layer-list>

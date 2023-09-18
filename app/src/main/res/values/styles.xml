@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppThemeWithoutActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="actionOverflowButtonStyle">@style/DotsDarkTheme</item>
+    </style>
+    <!-- Estilo de la aplicación para el modo claro -->
+    <style name="AppTheme.Light" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <style name="DotsDarkTheme" parent="@style/Widget.AppCompat.ActionButton.Overflow" >
+        <item name="android:tint">#FFFFFF</item>
+    </style>
+
+    <!-- Estilo de la aplicación para el modo oscuro -->
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/textColorPrimaryInverse</item>
+        <item name="android:windowBackground">@color/backgroundDark</item>
+    </style>
+    <!-- Estilo del menú emergente -->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="GreenDatePickerDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">#FFFFFF</item>
+        <item name="android:colorAccent">#047709</item>
+        <item name="android:colorControlActivated">#047709</item>
+        <item name="android:textColorSecondary">#047709</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:background">@drawable/searchview_background</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+    </style>
+    <style name="BootstrapButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">@drawable/bootstrap_button_background</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textSize">16sp</item>
+        <!-- Otros atributos personalizados -->
+    </style>
+
+</resources>

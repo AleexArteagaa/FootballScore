@@ -1,0 +1,12 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" /> <!-- Cambia el color de fondo del LinearLayout padre -->
+    <corners android:radius="10dp" /> <!-- Cambia el radio de los bordes del LinearLayout padre -->
+    <stroke
+        android:width="2dp"
+        android:color="#078A0D" /> <!-- Cambia el color y el ancho del borde del LinearLayout padre -->
+    <padding
+        android:left="2dp"
+        android:top="2dp"
+        android:right="2dp"
+        android:bottom="2dp" /> <!-- Agrega un padding para mostrar el borde completo -->
+</shape>

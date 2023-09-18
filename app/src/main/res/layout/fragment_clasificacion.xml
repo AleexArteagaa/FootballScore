@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_green_bottom_rounded"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinnerSeleccionGrupoClasificacion"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:id="@+id/spinnerSeleccionAnioClasificacion"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/paises_background"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            app:cardBackgroundColor="#89D880"
+            app:cardCornerRadius="4dp">
+
+            <LinearLayout
+                android:id="@+id/layoutInfoClasificacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitiloPosicion"
+                    android:layout_width="73dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Pos"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewTituloEquipo"
+                    android:layout_width="143dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="none"
+                    android:singleLine="true"
+                    android:text="Equipo"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewTituloPuntos"
+                    android:layout_width="43dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="PTS"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewTituloPartidos"
+                    android:layout_width="46dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="PJ"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewgoleshome"
+                    android:layout_width="46dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="PG"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewgolesfuera"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="PE"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewdiferenciagoles"
+                    android:layout_width="46dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="PP"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerClasificacion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtMensajeNoDisponibleClasificacionLiga"
+        android:layout_width="400dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="230dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+</LinearLayout>

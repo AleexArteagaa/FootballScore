@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+        android:title="Partidos"
+        android:icon="@drawable/campo_de_futbol"/>
+    <item android:id="@+id/explorar"
+        android:title="Explorar"
+        android:icon="@drawable/lupa"/>
+    <item android:id="@+id/favoritos"
+        android:title="Favoritos"
+        android:icon="@drawable/estrella_2"/>
+</menu>

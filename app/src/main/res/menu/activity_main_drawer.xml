@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/hogar"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_tienda"
+            android:icon="@drawable/carrito"
+            android:title="Tienda" />
+        <item
+            android:id="@+id/nav_apuesta"
+            android:title="Apuestas En Curso"
+            android:icon="@drawable/apuesta" />
+    </group>
+
+    <item
+        android:title="Otras opciones">
+        <menu>
+            <item
+                android:id="@+id/nav_sobre_nosotros"
+                android:icon="@drawable/sobrenosotros"
+                android:title="Sobre Nosotros" />
+            <item
+                android:id="@+id/nav_cerrar_sesion"
+                android:icon="@drawable/cerrarsesion"
+                android:title="Cerrar Sesión" />
+        </menu>
+    </item>
+
+</menu>
